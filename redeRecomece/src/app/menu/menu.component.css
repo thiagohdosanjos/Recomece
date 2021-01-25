@@ -1,0 +1,59 @@
+.main-navbar {
+    height: 70px;
+    background-color: RosyBrown;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.bt-color{
+    background-color: #e4e2f7 ;
+}
+.bt2-color{
+    background-color: RosyBrown ;
+}
+
+.retangulo{
+
+    width: 2025px;
+    height: 650px;    
+    background: Lavender;
+    
+}
+.textOne{
+position: absolute;
+width: 1816px;
+height: 471px;
+font-family: Squada One;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 76px;
+color: #FFFFFF;
+}
+.text{
+    font-size: 40px;
+}
+.text2{
+    font-size: 30px;
+}
+.altera-fontes {
+    font-style: normal;
+    font-size: 1.5em; 
+    font-family: "Times New Roman" 
+ 
+ }
+
+.fonte{
+ 
+        font-size: 30px;
+    
+}
+.retangulo2{
+    width: 1050px;
+    height: 650px;   
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
