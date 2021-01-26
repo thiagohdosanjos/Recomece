@@ -4,56 +4,114 @@
     padding-left: 45px;
     display: flex;
     align-items: center;
+    text-align: center
 }
 
-.bt-color{
-    background-color: #e4e2f7 ;
-}
-.bt2-color{
-    background-color: RosyBrown ;
+.bt-color:hover {
+    background-color: MediumAquamarine;
 }
 
-.retangulo{
+.bt2-color {
+    background-color: rgb(250, 241, 241);
+}
 
+.bt-cadastrar:hover {
+    background-color: rgb(85, 119, 211);
+}
+
+.retangulo {
     width: 2025px;
-    height: 650px;    
+    height: 650px;
     background: Lavender;
-    
 }
-.textOne{
-position: absolute;
-width: 1816px;
-height: 471px;
-font-family: Squada One;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 76px;
-color: #FFFFFF;
+
+.textOne {
+    position: absolute;
+    width: 1816px;
+    height: 471px;
+    font-family: Squada One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 76px;
+    color: #FFFFFF;
 }
-.text{
+
+.text {
     font-size: 40px;
 }
-.text2{
+
+.text2 {
     font-size: 30px;
 }
+
 .altera-fontes {
     font-style: normal;
-    font-size: 1.5em; 
-    font-family: "Times New Roman" 
- 
- }
-
-.fonte{
- 
-        font-size: 30px;
-    
+    font-size: 1.5em;
+    font-family: "Times New Roman"
 }
-.retangulo2{
+
+.fonte {
+    font-family: "Helvetica";
+}
+
+.retangulo2 {
     width: 1050px;
-    height: 650px;   
+    height: 650px;
     position: absolute;
     left: 0;
     bottom: 0;
+}
 
+/*cards*/
+
+.p10 {
+    padding: 10px;
+    margin: 40px;
+}
+
+.tm-social {
+    height: 50px;
+}
+
+/*.card-up:hover{
+		transform: translateY(-50px);
+		}*/
+
+.card {
+    width: 250px;
+    margin: 50;
+    display: inline-block;
+    text-align: left;
+    font-family: "Helvetica";
+}
+
+.tm-social {
+    height: 50;
+}
+
+.card-zoom {
+    transition: 0.5s;
+    transform: scale(1);
+    text-align: center;
+}
+
+.card-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: PowderBlue;
+    color: RosyBrown;
+    box-shadow: 10px 10px 0px black;
+    cursor: pointer;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.bolinha {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 50%;
+    margin: auto
 }
