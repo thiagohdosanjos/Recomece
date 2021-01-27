@@ -20,7 +20,7 @@
 }
 
 .retangulo {
-    width: 2025px;
+    width: 1350px;
     height: 650px;
     background: Lavender;
 }
@@ -56,8 +56,8 @@
 }
 
 .retangulo2 {
-    width: 1050px;
-    height: 650px;
+    width: 750px;
+    height: 450px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -67,11 +67,11 @@
 
 .p10 {
     padding: 10px;
-    margin: 40px;
+    margin: 15px;
 }
 
 .tm-social {
-    height: 50px;
+    height: 40px;
 }
 
 /*.card-up:hover{
@@ -79,15 +79,11 @@
 		}*/
 
 .card {
-    width: 250px;
+    width: 220px;
     margin: 50;
     display: inline-block;
     text-align: left;
     font-family: "Helvetica";
-}
-
-.tm-social {
-    height: 50;
 }
 
 .card-zoom {
@@ -101,7 +97,7 @@
     transform: scale(1.1);
     background-color: PowderBlue;
     color: RosyBrown;
-    box-shadow: 10px 10px 0px black;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -115,3 +111,8 @@
     width: 50%;
     margin: auto
 }
+.bt-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+    
+} 
