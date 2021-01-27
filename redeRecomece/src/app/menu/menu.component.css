@@ -7,6 +7,10 @@
     text-align: center
 }
 
+.text-inicio {
+    align-items: left;
+}
+
 .bt-color:hover {
     background-color: MediumAquamarine;
 }
@@ -56,10 +60,9 @@
 }
 
 .retangulo2 {
-    width: 750px;
-    height: 450px;
-    position: absolute;
-    left: 0;
+    width: 540px;
+    height: 300px;
+    left: 0px;
     bottom: 0;
 }
 
@@ -92,14 +95,49 @@
     text-align: center;
 }
 
-.card-zoom:hover {
+.card1-zoom:hover {
     transition: 0.5s;
-    transform: scale(1.1);
-    background-color: PowderBlue;
-    color: RosyBrown;
+    transform: scale(1.1); 
+    background-color: AntiqueWhite;
     box-shadow: 10px 10px 0px rgb(0, 0, 0);
     cursor: pointer;
 }
+.card2-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color:BlanchedAlmond ;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.card3-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: Bisque;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.card4-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: PapayaWhip;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.card5-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: Moccasin;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.card6-zoom:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: BlanchedAlmond;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
 
 .tcenter {
     text-align: center;
@@ -111,8 +149,124 @@
     width: 50%;
     margin: auto
 }
+
 .bt-zoom:hover {
     transition: 0.5s;
     transform: scale(1.3);
-    
-} 
+}
+
+/*cadastrar css*/
+
+#img-bg {
+    background-image: url('https://i.imgur.com/Wulqi5y.png');
+    min-height: 500px;
+    min-width: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*button-cadastrar*/
+
+html, body {
+    height: 100%;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-cad {
+    min-width: 150px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button-cadastro::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(135px + 12px);
+    min-height: calc(40px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 70px rgba(0, 255, 203, .64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+    opacity: 1;
+}
+
+button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 145px;
+        height: 140px;
+        opacity: 0;
+    }
+}
+
+/*fim do botão cadastrar*/
+
+.background {
+    background-color: Seashell;
+}
+
+/*carrosel transparencia inicio*/
+
+.div
+{
+  width: 100%; 
+  height: 100px;/* Aqui você pode alterar */
+  display: flex;
+}
