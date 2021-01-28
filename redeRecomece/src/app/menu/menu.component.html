@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-lg main-navbar  ">
     <a href="#scroll">
-        <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px"
-            class="img-fluid "></a>
+        <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px" class="img-fluid "></a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -11,17 +10,14 @@
         <form class="form-inline text-aling: right ">
             <div class="form-group  mx-2">
 
-                <label for="inputEmail" class="sr-only ">Seu email</label>
-                <input type="email" class="form-control  mx-2" id="email" placeholder="Seu email">
+                <label for="inputUsuário" class="sr-only ">Seu Usuário</label>
+                <input [(ngModel)]='userLogin.userName ' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
                 <label for="inputPassword2" class="sr-only">Senha</label>
-                <input type="password" class="form-control  mx-2 " id="inputPassword2" placeholder="Senha">
+                <input [(ngModel)]='userLogin.senha ' type="password" class="form-control  mx-2 " id="inputPassword2" placeholder="Senha">
             </div>
 
-            <a href="#areax"> <button class="btn btn-outline-secondary bt-color bt2-color mx-2  bt-zoom"
-                    type="button">Entrar!</button></a>
-            <a href="#areacadastrar"> <button
-                    class="btn btn-outline-secondary bt-color mx-3 bt2-color bt-cadastrar bt-zoom"
-                    type="button">Cadastre-se!</button></a>
+            <a href="#areax"> <button type="submit" class="btn btn-outline-secondary bt-color bt2-color mx-2  bt-zoom" type="button" (click)='entrar()'>Entrar!</button></a>
+            <a href="#areacadastrar"> <button class="btn btn-outline-secondary bt-color mx-3 bt2-color bt-cadastrar bt-zoom" type="button">Cadastre-se!</button></a>
 
         </form>
     </div>
@@ -62,13 +58,10 @@
 <!--Inicio Intro-->
 <div class="background">
     <div class="jumbotron retangulo">
-        <p class="display-4 font-italic font-weight-bold text-dark text">Ambiente de Integração para o seu
-            Desenvolvimento!
+        <p class="display-4 font-italic font-weight-bold text-dark text">Ambiente de Integração para o seu Desenvolvimento!
         </p>
-        <p class="lead text-dark text2"> Para você mulher que decidiu reescrever as linhas do seu destino, faça parte da
-            nossa comunidade feminina.</p>
-        <img src="https://i.imgur.com/GQzzLEd.png" alt="Mulheres com bandeira Recomece" width="800px" height="90px"
-            class="img-fluid  float-sm-right">
+        <p class="lead text-dark text2"> Para você mulher que decidiu reescrever as linhas do seu destino, faça parte da nossa comunidade feminina.</p>
+        <img src="https://i.imgur.com/GQzzLEd.png" alt="Mulheres com bandeira Recomece" width="800px" height="90px" class="img-fluid  float-sm-right">
     </div>
 
     <!--Fim Intro-->
@@ -77,50 +70,35 @@
     <br>
     <section id="sobre">
         <div class="col-md-12" id="scroll">
-            <h1 class="d-flex justify-content-center font-italic display-4 mb-4 p-3 text-center text-xs-left">A
-                iniciativa...
+            <h1 class="d-flex justify-content-center font-italic display-4 mb-4 p-3 text-center text-xs-left">A iniciativa...
             </h1>
 
             <div class="row align-items-center w-100">
 
                 <div>
 
-                    <img src="https://i.imgur.com/d98QTsi.png" alt="Logo Recomece" class="img-fluid" width="50%"
-                        style="float:left">
+                    <img src="https://i.imgur.com/d98QTsi.png" alt="Logo Recomece" class="img-fluid" width="50%" style="float:left">
                     <p class="font-weight-light text-justify  altera-fontes col-md-12 fonte align-center">
                         Verificamos no nosso dia a dia a ausência de <span style='font-weight:bold'>mulheres no mercado
                             da
-                            tecnologia</span>, e com a crescente
-                        dedicação
-                        para a <span style='font-weight:bold'>inclusão delas</span>, visamos no projeto atingir alguns
-                        Objetivos de Desenvolvimento Sustentável da
-                        ONU
-                        para 2030.
+                            tecnologia</span>, e com a crescente dedicação para a <span style='font-weight:bold'>inclusão delas</span>, visamos no projeto atingir alguns Objetivos de Desenvolvimento Sustentável da ONU para 2030.
 
                     </p>
 
                     <p class="font-weight-light text-justify altera-fontes col-md-12 fonte">
                         Para que se saiba, são eles:<span style='font-weight:bold'> Educação de Qualidade, Redução das
-                            desigualdades</span> (o que talvez também
-                        promova
-                        uma Igualdade de Gênero) e <span style='font-weight:bold'>Emprego e Crescimento
+                            desigualdades</span> (o que talvez também promova uma Igualdade de Gênero) e <span style='font-weight:bold'>Emprego e Crescimento
                             Econômico.</span>
 
                     </p>
 
                     <p class="font-weight-light text-justify altera-fontes col-md-12 fonte">
-                        Desenvolvemos essa rede, dando um suporte, para que haja um melhor engajamento e <span
-                            style='font-weight:bold'>diversidade</span> dentro
-                        do mercado, revelando oportunidades, eventos ou qualquer atividade que prepare as habilidades do
-                        usuário para ingressar no mercado.
-                        O Recomece nasceu em um momento em que surgiu um termo inerente às mulheres: feminicídios.
-                        <br>Dada as estatísticas, não poderiamos excluir esse tema mais delicado nos nossos assuntos, para
-                        que
-                        você se
-                        sinta confortável e plena na tomada das suas decisões.
+                        Desenvolvemos essa rede, dando um suporte, para que haja um melhor engajamento e <span style='font-weight:bold'>diversidade</span> dentro do mercado, revelando oportunidades, eventos ou qualquer atividade que prepare as habilidades
+                        do usuário para ingressar no mercado. O Recomece nasceu em um momento em que surgiu um termo inerente às mulheres: feminicídios.
+                        <br>Dada as estatísticas, não poderiamos excluir esse tema mais delicado nos nossos assuntos, para que você se sinta confortável e plena na tomada das suas decisões.
                     </p>
 
-                   
+
 
 
                 </div>
@@ -148,33 +126,31 @@
 
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                            <input [(ngModel)]='user.nome ' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
                         </div>
                         <div class="form-group">
                             <label for="usuario">Usuário</label>
-                            <input class="form-control" type="text" name="usuario" id="usuario"
-                                placeholder="Seu usuário">
+                            <input [(ngModel)]='user.userName ' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
                         </div>
 
                         <div class="form-group">
                             <label for="foto">Link da foto</label>
-                            <input class="form-control" type="text" name="foto" id="foto" placeholder="Sua foto">
+                            <input [(ngModel)]='user.foto ' class="form-control" type="text" name="foto" id="foto" placeholder="Sua foto">
                         </div>
 
                         <div class="form-group">
                             <label for="senha">Senha</label>
-                            <input class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
+                            <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
                         </div>
 
                         <div class="form-group">
                             <label for="confirmeSenha">Confirmar Senha</label>
-                            <input class="form-control" type="password" name="confirmeSenha" id="confirmeSenha"
-                                placeholder="Confirme sua senha">
+                            <input [(ngModel)]='user.senha' class="form-control" type="password" name="confirmeSenha" id="confirmeSenha" placeholder="Confirme sua senha">
                         </div>
 
                         <div class="form-group">
                             <label for="tipo">Tipo de Usuário</label>
-                            <select class="form-control" name="tipo" id="tipo">
+                            <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                                 <option>Selecione um tipo de usuário:</option>
                                 <option value="normal">Normal</option>
                                 <option value="administrador">Administrador</option>
@@ -182,7 +158,7 @@
                             <br>
                             <br>
                             <div class="wrap">
-                                <button class="button-cad button-cadastro">Cadastrar</button>
+                                <button type="submit" class="button-cad button-cadastro" (click)='cadastrar()'>Cadastrar</button>
                             </div>
                         </div>
 
@@ -284,8 +260,7 @@
                 <a href="" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
-                <a href="https://www.linkedin.com/in/ana-veronica-nascimento-cruz-1896a0158/" target="_blank"
-                    class="p-2">
+                <a href="https://www.linkedin.com/in/ana-veronica-nascimento-cruz-1896a0158/" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/AaY5agL.png" alt="Logo do Linkedin">
                 </a>
             </div>
