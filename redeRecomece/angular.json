@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "redeRecomece"
+  "defaultProject": "redeRecomece",
+  "cli": {
+    "analytics": "f0b40ff6-4d95-4262-b07a-ffd27655355f"
+  }
 }
